@@ -1,6 +1,8 @@
 $(function() {
 
-var socket = io.connect('http://localhost');
+//var socket = io.connect('http://localhost');
+//var socket = io.connect('http://192.168.0.6');
+var socket = io.connect(ipAddress);
 	socket.on('connect', function() { // 2
 		console.log('connected');
 	});
